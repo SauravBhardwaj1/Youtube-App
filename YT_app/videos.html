@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube</title>
+    <style>
+        body{
+            background-color: rgb(8, 8, 8);
+        }
+        #navbar{
+            display:flex;
+            width: 100%;
+            height: 70px;
+            border: 0px solid blue;
+            background-color: rgba(22, 22, 22, 0.938);
+        }
+        #navbar>#div1{
+            width: 100px;
+            height: 70px;
+            background-color: rgba(22, 20, 20, 0.938);
+        }
+        #navbar>#div1>button{
+            background-color: rgba(22, 20, 20, 0.938);
+            height: 70px;
+            cursor: pointer;
+        }
+        #navbar>#div1>button>a{
+            background-color: rgba(22, 20, 20, 0.938);
+            width: 100px;
+            height: 70px;
+            cursor: pointer;
+        }
+        #navbar>#div1 img{
+            width: 100%;
+            margin-left: -10px;
+            background-color: rgba(22, 20, 20, 0.938);
+        }
+        #navbar>#div2{
+            width: 120px;
+            height: 70px;
+            background-color: rgba(22, 20, 20, 0.938);
+        }
+        #navbar>#div2>button{
+            background-color: rgba(22, 20, 20, 0.938);
+            height: 70px;
+            cursor: pointer;
+        }
+        #navbar>#div2 img{
+            width: 95%;
+            margin-left: -10px;
+            background-color: rgba(22, 20, 20, 0.938);
+        }
+        #main{
+            display: flex;
+            border: 1px solid black;
+            width: 100%;
+            height: 550px;
+            margin-top: 20px;
+        }
+        #videos{
+            flex: 3;
+            border: 1px solid black;
+            color: white;
+        }
+        #recommendation{
+            flex: 1;
+            border: 1px solid black;
+            color: white;
+        }
+
+        
+    </style>
+</head>
+<body onload="playVideo()">
+    <nav id="navbar">
+        <div id="div1">
+            <button class="nav">
+                <a href="index.html">
+                    <img class="img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQMAAADCCAMAAAB6zFdcAAAARVBMVEUQDxH///8AAAALCg0IBgm6urorKywSERMfHiDW1tZhYWLv7++hoKG4uLhdXF0WFRfOzs6YmJlzc3P29vbh4eGSkZIoJymJAF6KAAAA4ElEQVR4nO3ay3LCMAwFUEeGhlJeffH/n1rSbruQF5AZcc46C88dJbYjtQYAAAAAAAAAAAAAAAAAAAAAAAAAi75J6muv9F42cX1JOsfai72Pvnud0g41Q4htPoJp2pcMId5GMqhZCHEcyeBUMoN+vuQjeC8ZwS2E6HPuyTmKRnDT09ZeKQDwIJFX9YAQp+M26bCreVCMj4Er0+dcshLia+Te+F2yEGTgXfjlm9jsjQDAP/xb79Gevcei16bnutB7N4OxMIvTzGT9MZsHAAAAAAAAAAAAAAAAAAAAAAAAwJgflNsLvphLZ6YAAAAASUVORK5CYII=" alt="">
+                </a>
+                
+            </button>
+        </div>  
+        <div id="div2">  
+            <button class="nav1">
+                <a href="index.html">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5Jrh9cZXKQjn1abBJWnwPH0A61Q9Tjl5d8g&usqp=CAU" alt="">
+                </a>
+                
+            </button>  
+        </div>
+    </nav> 
+    <div id="main">
+        <div id="videos">Videos</div>
+        <div id="recommendation">recommendation</div>
+    </div>        
+</body>
+</html>
+<script>
+
+    const videos=document.getElementById('videos')
+    const playVideo=()=>{
+
+        let {videoID}=JSON.parse(localStorage.getItem('clicked_item'))
+
+        let iframe=document.createElement('iframe')
+        iframe.src=`https://www.youtube.com/embed/${videoID}?autoplay=1&mute=1`
+        iframe.width="100%"
+        iframe.height="100%"
+        iframe.setAttribute('allowfullscreen',true)
+        
+        videos.append(iframe)
+    }
+
+</script>

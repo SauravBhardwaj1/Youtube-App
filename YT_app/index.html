@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <nav id="navbar">
+        <div id="div1">
+            <button class="nav">
+                <a href="index.html">
+                    <img class="img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQMAAADCCAMAAAB6zFdcAAAARVBMVEUQDxH///8AAAALCg0IBgm6urorKywSERMfHiDW1tZhYWLv7++hoKG4uLhdXF0WFRfOzs6YmJlzc3P29vbh4eGSkZIoJymJAF6KAAAA4ElEQVR4nO3ay3LCMAwFUEeGhlJeffH/n1rSbruQF5AZcc46C88dJbYjtQYAAAAAAAAAAAAAAAAAAAAAAAAAi75J6muv9F42cX1JOsfai72Pvnud0g41Q4htPoJp2pcMId5GMqhZCHEcyeBUMoN+vuQjeC8ZwS2E6HPuyTmKRnDT09ZeKQDwIJFX9YAQp+M26bCreVCMj4Er0+dcshLia+Te+F2yEGTgXfjlm9jsjQDAP/xb79Gevcei16bnutB7N4OxMIvTzGT9MZsHAAAAAAAAAAAAAAAAAAAAAAAAwJgflNsLvphLZ6YAAAAASUVORK5CYII=" alt="">
+                </a>
+                
+            </button>
+        </div>  
+        <div id="div2">  
+            <button class="nav1">
+                <a href="index.html">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5Jrh9cZXKQjn1abBJWnwPH0A61Q9Tjl5d8g&usqp=CAU" alt="">
+                </a>
+                
+            </button>  
+        </div>
+        <input type="text" placeholder="Search" id="videos">
+        <button id="query" onclick="searchVideos()">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5FOL5LiX0VxgYNk9PaMKDRiyPCqgPDsaQqHDpJE_F-RBAgAutUiIKZXYwAeJMPiOR8PM&usqp=CAU" alt=""></button>
+        <button id="btn">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4fj16mwDPnwtY_rbZJRjzN4x4BWHCdR6Wbg&usqp=CAU" alt="">
+        </button>
+        <button id="btn1">
+            <img src="https://thumbs.dreamstime.com/b/video-camera-icon-flat-illustration-graphic-web-design-isolated-black-background-video-camera-icon-flat-illustration-161242685.jpg" alt="">
+        </button>
+        <button id="btn2">
+            <img src="https://i.pinimg.com/736x/98/31/a8/9831a87a7f2d3ca32e64a15b1f20cbcf.jpg" alt="">
+        </button>
+        <button id="btn3">
+            <img src="https://iconarchive.com/download/i43383/oxygen-icons.org/oxygen/Places-user-identity.ico" alt="">
+        </button>
+    </nav>
+
+    <div class="side_slidbar">
+        <div class="links">
+            <a href=""><img src="https://png.pngtree.com/png-vector/20190223/ourmid/pngtree-vector-house-icon-png-image_695726.jpg" alt=""><p>Home</p></a>
+            <a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnaSCf3mvgdLIFlRtKnaCZM7KihBHgkCLY5b9QQAelTcRqCky3wrtNEdq7UpO9BJTmRzc&usqp=CAU" alt=""><p>Explore</p></a>
+            <a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDZrUm7TOlWWUFjkWEHLR7nmXOKd9D-uZxYlvLDdoDvITdt5R0i2MPQVLUvZ6gHsvm3xw&usqp=CAU" alt=""><p>Shorts</p></a>
+            <a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0kvOY5Zu0fUiifFarR0iG8FVzSCy9b4FCIaNx2H1695F6Djp9rMCUTombEraEtGVaqas&usqp=CAU" alt=""><p>Subscription</p></a>
+            <a href=""><img src="https://cdn3.iconfinder.com/data/icons/eyes-glyph-1/32/Check_eye_Watched_Access_View_Seen_eye-512.png" alt=""><p>History</p></a>
+            <a href=""><img src="https://static.thenounproject.com/png/52735-200.png" alt=""><p>Playlist</p></a>
+            <a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9lUkb-gI5RxL_TNmkzh05BASZi3u65U3oHiQxEoic88n6ir58-qKgNlNG2KCj72wHLrs&usqp=CAU" alt=""><p>Watch later</p></a>
+            <a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRppp92oZBSnZF_EFvyyqfM6cnjq_LbGEWIbCkjqGJoiHrK9DoIYZIE9jKBN1DxyzvPYBo&usqp=CAU" alt=""><p>Show More</p></a>
+            <hr>
+
+
+        </div>
+    </div>
+
+    <div id="container"></div>
+    <div id="default"></div>
+</body>
+</html>
+
+<script src="./script.js"></script>
